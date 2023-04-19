@@ -17,6 +17,18 @@ from pyrogram import filters
 load_dotenv()
 
 # Get it from my.telegram.org
+PAPARA_ENABLED = True
+
+PAPARA_TOKEN = "YOUR_PAPARA_TOKEN"
+
+PAPARA_NAME = "YOUR_PAPARA_NAME"
+
+PAPARA_PRICE_1 = 100
+
+PAPARA_PRICE_2 = 200
+
+PAPARA_PRICE_3 = 250
+
 API_ID = int(getenv("API_ID", "4723828"))
 API_HASH = getenv("API_HASH", "a41aa20922b2b9ed39ecbcffcd452154")
 
