@@ -90,9 +90,9 @@ async def varsFunc(client, message):
     text = f"""**VideoMuzikBot:**
 
 **<u>Hakkımızda</u>**
-`Kanalımız` : @VideoMuzikKomutlar
-`Grubumuz` : @sohbet_mavi_muhabbet
-`Yapımcım` : @MissSahip && @intikamkurucusu
+`Kanalımız` : @DeepBotsOfficial
+
+`Yapımcım` : @DeepBotsventor
     """
     await asyncio.sleep(1)
     await mystic.edit_text(text)
