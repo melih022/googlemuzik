@@ -70,6 +70,3 @@ async def clear_downloads(_, message: Message):
         await message.reply_text("**temiz zaten**")
         
         
-@app.on_message(filters.command(SAHIP_COMMAND) & SUDOERS)
-async def mesaj(client, message: Message):
-  await message.reply("** Deep Bots** - @DeepBotsOfficial - ileri Düzey bot teknoloji s")
