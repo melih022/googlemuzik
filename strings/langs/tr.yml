@@ -74,7 +74,7 @@ admin_34 : "Mevcut akış aranamadı."
 # Bot 
 # Start
 start_1 : "Beni {0} Grubuna davet ettiğiniz için teşekkürler.\n\nHerhangi bir yardım için destek grubumuza veya kanalımıza göz atın.."
-start_2 : "💥Merhaba sevgili dostlar sizin için oluşturulmuş video ve müzik botuyum beni kullanarak gruplarınızda şarkı dinleyebilir veya film izleyebilirsiniz Ayrıca burdan ve grubunuzda /bul komutu ile şarkı /video komutu ile film veya video indirebilirsiniz\nBot ile alakalı herhangi bir sorunda veya önerinizde /talep komutunu kullanabilir veya biz yetkililere @DeepBotsventor mesaj atabilirsiniz😇**"
+start_2 : "Ben video ve müzik botuyum beni kullanarak gruplarınızda şarkı dinleyebilir veya film izleyebilirsiniz Ayrıca burdan ve grubunuzda /bul komutu ile şarkı indirebilirsiniz\nBot ile alakalı herhangi bir sorunda veya önerinizde /deep komutunu kullanarak sahibimle iletişime geçebilirsinsiniz😇**"
 start_3 : "Botumuzun Adı {0}\n\n**Botun Çalışması İçin Gerekli Adımlar**:\n1-)Mesaj Silme\n2-)Görüntülü Sohbet Yönetme\n3-)Bağlantı İle Davet Etme\nBot İçin Bu Yetkileri Vermelisiniz.\n💡 Komutlarım İçin /komutlar Yazarak Tüm Komutları Görebilirsiniz.\n\n**🎶 KEYİFLİ DİNLEMELER 🎶**"
 start_4 : "{0} **Botun Kurucusu** -> {1} <- **Grubunuza Katıldı**."
 start_5 : "{0} **Botun Yetkili Kullanıcısı** -> {1} <- **Grubunuza Katıldı**."
