@@ -33,8 +33,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text=_["PL_B_15"],
 
                 url=f"https://t.me/SanatKlinigi",
-
-            )
+            ),
         ],
         
         [
@@ -84,7 +83,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
 
                 url=f"https://t.me/SanatKlinigi",
 
-            )
+            ),
         ],
         
     ]
@@ -107,12 +106,9 @@ def stream_markup(_, videoid, chat_id):
                 url=f"https://t.me/DeepBotsOfficial/11",
             ),
             InlineKeyboardButton(
-
                 text=_["PL_B_15"],
-
                 url=f"https://t.me/SanatKlinigi",
-
-            )
+            ),
         ],
         
         [
@@ -152,7 +148,7 @@ def telegram_markup(_, chat_id):
 
                 url=f"https://t.me/SanatKlinigi",
 
-            )
+            ),
          ],
          
          [
@@ -237,7 +233,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
 
                 url=f"https://t.me/SanatKlinigi",
 
-            )
+            ),
         ],
         
         [
