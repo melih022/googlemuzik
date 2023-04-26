@@ -244,7 +244,7 @@ START_IMG_URL = getenv(
 
     "START_IMG_URL",
 
-    "assets/startvideo.jpeg",
+    "assets/startvideo.jpg",
 
 )
 
