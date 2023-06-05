@@ -74,7 +74,7 @@ admin_34 : "Mevcut akış aranamadı."
 # Bot 
 # Start
 start_1 : "Beni {0} Grubuna davet ettiğiniz için teşekkürler.\n\nHerhangi bir yardım için destek grubumuza veya kanalımıza göz atın.."
-start_2 : "**Merhaba\nBen Video ve Müzik Botuyum.\n\nDaha Fazla Bilgi Almak İçin - Deep Bots Butonuna Tıklayabilir, /deep Yazarak Sahibimle İletişim Kurabilirsin.**"
+start_2 : "**Merhaba\nBen Video ve Müzik Botuyum.\n\nDaha Fazla Bilgi Almak İçin - Google Bilgi Butonuna Tıklayabilir, /yardım Yazarak Sahibimle İletişim Kurabilirsin.**"
 
 
 start_3 : "Botumuzun Adı {0}\n\n**Botun Çalışması İçin Gerekli Adımlar**:\n1-)Mesaj Silme\n2-)Görüntülü Sohbet Yönetme\n3-)Bağlantı İle Davet Etme\nBot İçin Bu Yetkileri Vermelisiniz.\n💡 Komutlarım İçin /komutlar Yazarak Tüm Komutları Görebilirsiniz.\n\n**🎶 KEYİFLİ DİNLEMELER 🎶**"
