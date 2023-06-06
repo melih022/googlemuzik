@@ -20,19 +20,19 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/DeepBotsMusic",
+                url=f"https://t.me/GoogleMuzikKayit",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_13"],
-                url=f"https://t.me/DeepBotsOfficial/11",
+                url=f"https://t.me/GoogleBilgi/11",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_14"],
-                url=f"https://t.me/DeepBotsOfficial",
+                url=f"https://t.me/GoogleBilgi",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_15"],
@@ -72,19 +72,19 @@ def telegram_markup_timer(_, chat_id, played, dur):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/DeepBotsMusic",
+                url=f"https://t.me/GoogleMuzikKayit",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_13"],
-                url=f"https://t.me/DeepBotsOfficial/11",
+                url=f"https://t.me/GoogleBilgi/11",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_14"],
-                url=f"https://t.me/DeepBotsOfficial",
+                url=f"https://t.me/GoogleBilgi",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_15"],
@@ -102,19 +102,19 @@ def stream_markup(_, videoid, chat_id):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/DeepBotsMusic",
+                url=f"https://t.me/GoogleMuzikKayit",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_13"],
-                url=f"https://t.me/DeepBotsOfficial/11",
+                url=f"https://t.me/GoogleBilgi/11",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_14"],
-                url=f"https://t.me/DeepBotsOfficial",
+                url=f"https://t.me/GoogleBilgi",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_15"],
@@ -144,19 +144,19 @@ def telegram_markup(_, chat_id):
          [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/DeepBotsMusic",
+                url=f"https://t.me/GoogleMuzikKayit",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_13"],
-                url=f"https://t.me/DeepBotsOfficial/11",
+                url=f"https://t.me/GoogleBilgi/11",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_14"],
-                url=f"https://t.me/DeepBotsOfficial",
+                url=f"https://t.me/GoogleBilgi",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_15"],
@@ -230,19 +230,19 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["PL_B_12"],
-                url=f"https://t.me/DeepBotsMusic",
+                url=f"https://t.me/GoogleMuzikkayit",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_13"],
-                url=f"https://t.me/DeepBotsOfficial/11",
+                url=f"https://t.me/Googlebilgi/11",
             )
         ],
         [
             InlineKeyboardButton(
                 text=_["PL_B_14"],
-                url=f"https://t.me/DeepBotsOfficial",
+                url=f"https://t.me/GoogleBilgi",
             ),
             InlineKeyboardButton(
                 text=_["PL_B_15"],
