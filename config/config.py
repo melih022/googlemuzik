@@ -96,7 +96,7 @@ GIT_TOKEN = getenv("GIT_TOKEN", "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")
 
 SUPPORT_CHANNEL = getenv(
 
-    "SUPPORT_CHANNEL", "https://t.me/DeepBotsOfficial"
+    "SUPPORT_CHANNEL", "https://t.me/GoogleBilgi"
 
 )  # Example:- https://t.me/TheYukki
 
