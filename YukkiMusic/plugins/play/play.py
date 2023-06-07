@@ -1,3 +1,12 @@
+#
+# Copyright (C) 2021-2022 by TeamYukki@Github, < https://github.com/TeamYukki >.
+#
+# This file is part of < https://github.com/TeamYukki/YukkiMusicBot > project,
+# and is released under the "GNU v3.0 License Agreement".
+# Please see < https://github.com/TeamYukki/YukkiMusicBot/blob/master/LICENSE >
+#
+# All rights reserved.
+
 import random
 import string
 from ast import ExceptHandler
@@ -183,6 +192,11 @@ async def play_commnd(
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "yt"
+                if "&" in url:
+                    plist_id = (url.split("=")[1]).split("&")[0]
+                else:
+                    plist_id = url.split("=")[1]
+                img = config.PLAYLIST_IMG_URL
                 cap = _["play_10"]
             else:
                 try:
@@ -191,6 +205,7 @@ async def play_commnd(
                     print(e)
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
+                img = details["thumb"]
                 cap = _["play_11"].format(
                     details["title"],
                     details["duration_min"],
@@ -210,6 +225,7 @@ async def play_commnd(
                 except Exception:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
+                img = details["thumb"]
                 cap = _["play_11"].format(
                     details["title"], details["duration_min"]
                 )
@@ -220,6 +236,7 @@ async def play_commnd(
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "spplay"
+                img = config.SPOTIFY_PLAYLIST_IMG_URL
                 cap = _["play_12"].format(
                     message.from_user.first_name
                 )
@@ -230,6 +247,7 @@ async def play_commnd(
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "spalbum"
+                img = config.SPOTIFY_ALBUM_IMG_URL
                 cap = _["play_12"].format(
                     message.from_user.first_name
                 )
@@ -240,6 +258,7 @@ async def play_commnd(
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "playlist"
                 plist_type = "spartist"
+                img = config.SPOTIFY_ARTIST_IMG_URL
                 cap = _["play_12"].format(
                     message.from_user.first_name
                 )
@@ -252,6 +271,7 @@ async def play_commnd(
                 except Exception:
                     return await mystic.edit_text(_["play_3"])
                 streamtype = "youtube"
+                img = details["thumb"]
                 cap = _["play_11"].format(
                     details["title"], details["duration_min"]
                 )
@@ -275,6 +295,7 @@ async def play_commnd(
             except Exception as e:
                 return await mystic.edit_text(_["play_3"])
             streamtype = "youtube"
+            img = details["thumb"]
             cap = _["play_11"].format(
                 details["title"], details["duration_min"]
             )
@@ -387,7 +408,7 @@ async def play_commnd(
                     track_id,
                     user_id,
                     "v" if video else "a",
-                    "k" if channel else "g",
+                    "c" if channel else "g",
                     "f" if fplay else "d",
                 )
                 return await mystic.edit_text(
@@ -431,11 +452,12 @@ async def play_commnd(
                 ran_hash,
                 message.from_user.id,
                 plist_type,
-                "k" if channel else "g",
+                "c" if channel else "g",
                 "f" if fplay else "d",
             )
             await mystic.delete()
-            await message.reply_text(
+            await message.reply_photo(
+                photo=img,
                 caption=cap,
                 reply_markup=InlineKeyboardMarkup(buttons),
             )
@@ -450,12 +472,13 @@ async def play_commnd(
                     message.from_user.id,
                     query,
                     0,
-                    "k" if channel else "g",
+                    "c" if channel else "g",
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_text(
-                    _["play_11"].format(
+                await message.reply_photo(
+                    photo=details["thumb"],
+                    caption=_["play_11"].format(
                         details["title"].title(),
                         details["duration_min"],
                     ),
@@ -469,11 +492,12 @@ async def play_commnd(
                     _,
                     track_id,
                     message.from_user.id,
-                    "k" if channel else "g",
+                    "c" if channel else "g",
                     "f" if fplay else "d",
                 )
                 await mystic.delete()
-                await message.reply_text(
+                await message.reply_photo(
+                    photo=img,
                     caption=cap,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
@@ -528,7 +552,7 @@ async def play_music(client, CallbackQuery, _):
             track_id,
             CallbackQuery.from_user.id,
             mode,
-            "k" if cplay == "k" else "g",
+            "c" if cplay == "c" else "g",
             "f" if fplay else "d",
         )
         return await mystic.edit_text(
@@ -567,7 +591,7 @@ async def play_music(client, CallbackQuery, _):
 async def anonymous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "Anonim bir Yöneticisiniz\n\nGrubunuzun ayarlarına gidin \n-> Yöneticiler Listesi\n-> Adınızı tıklayın \n-> orada ANONİM KALIN düğmesinin işaretini kaldırın.",
+            "You're an Anonymous Admin\n\nGo to your group's setting \n-> Administrators List \n-> Click on your name \n-> uncheck REMAIN ANONYMOUS button there.",
             show_alert=True,
         )
     except:
@@ -702,13 +726,14 @@ async def slider_queries(client, CallbackQuery, _):
             await CallbackQuery.answer(_["playcb_2"])
         except:
             pass
-        title, duration_min, vidid = await YouTube.slider(
+        title, duration_min, thumbnail, vidid = await YouTube.slider(
             query, query_type
         )
         buttons = slider_markup(
             _, vidid, user_id, query, query_type, cplay, fplay
         )
         med = InputMediaPhoto(
+            media=thumbnail,
             caption=_["play_11"].format(
                 title.title(),
                 duration_min,
@@ -733,6 +758,7 @@ async def slider_queries(client, CallbackQuery, _):
             _, vidid, user_id, query, query_type, cplay, fplay
         )
         med = InputMediaPhoto(
+            media=thumbnail,
             caption=_["play_11"].format(
                 title.title(),
                 duration_min,
