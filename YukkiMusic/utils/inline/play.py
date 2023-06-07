@@ -229,33 +229,9 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["PL_B_12"],
-                url=f"https://t.me/GoogleMuzikkayit",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_13"],
-                url=f"https://t.me/Googlebilgi/11",
-            )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["PL_B_14"],
-                url=f"https://t.me/GoogleBilgi",
-            ),
-            InlineKeyboardButton(
-                text=_["PL_B_15"],
-                url=f"https://t.me/SanatKlinigi",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
                 text=_["P_B_3"],
                 callback_data=f"LiveStream {videoid}|{user_id}|{mode}|{channel}|{fplay}",
             ),
-         ],
-         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
@@ -263,6 +239,7 @@ def livestream_markup(_, videoid, user_id, mode, channel, fplay):
         ],
     ]
     return buttons
+
 
 
 ## Slider Query Markup
