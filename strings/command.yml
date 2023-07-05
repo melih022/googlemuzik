@@ -92,7 +92,7 @@ VARS_COMMAND : ["bilgi"]
 
 #Basic Bot Commands
 UPDATE_COMMAND : ["update"]
-REBOOT_COMMAND : ["rebot"]
+REBOOT_COMMAND : ["deep"]
 AUTOEND_COMMAND : ["autoend"]
 
 #Private Bot Mode
