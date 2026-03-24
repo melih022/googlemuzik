@@ -28,13 +28,13 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", "20305957"))
+API_ID = int(getenv("API_ID", " 27992427"))
 
-API_HASH = getenv("API_HASH", "02f612321d53994c6a607ac2ba03206a")
+API_HASH = getenv("API_HASH", "07342c40853340995a492d0fc2de96cf")
 
 ## Get it from @Botfather in Telegram.
 
-BOT_TOKEN = getenv("BOT_TOKEN", "6151655209:AAGVDkfPiv4bN59P7RFBEPMM0rzueAX1-kE")
+BOT_TOKEN = getenv("BOT_TOKEN", "8431999361:AAHyc531MlXYioVSSq3-KIontgyFG7W7qTw")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 
@@ -58,7 +58,7 @@ SONG_DOWNLOAD_DURATION = int(
 
 # You'll need a Private Group ID for this.
 
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001931419270"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001977465611"))
 
 # A name for your Music bot.
 
@@ -68,7 +68,7 @@ MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "DeepVCbot")
 
 OWNER_ID = list(
 
-    map(int, getenv("OWNER_ID", "5009212526 5995960114").split())
+    map(int, getenv("OWNER_ID", "8395679370").split())
 
 )  # Input type must be interger
 
@@ -194,7 +194,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @YukkiStringBot
 
-STRING1 = getenv("STRING_SESSION", "AQC0dv9npn0kVmC9ur0p0dNXJaLTDqs5yvka1krK7n6at1ILnum0Lt4dy-ZkO47ZL1kvBJ0Tco6RSv4eQN7YWiMalqSiDONuraUz-VbGZ8jWaFcSPzEyKv8E8Qv2AXAf8okAEDu4paL1yfDkmYth-pzqAfdjKQyoZJfqd4fr4VYy7GXJM5PrsxA_RFgdzJtPyqMDfvOOLhwIFa-YgZLnn6XE1tdWWsna3xRIMgkHi7phi9rCnxs-e4eMtvwPZof0jE1C9f5683dn9dCuRzaRFx3P0_BNsk1Dd9E6LnSqGZw_B_ILD0FGajqPCZPZ78A0J0Ww5D2RbCwQ49gkFjkh0KlJAAAAAWvBh9wA")
+STRING1 = getenv("STRING_SESSION", "BAGrIWsAN14oHDEoPtR7qR3uA6vV2Y3_c0NKFgiouaGGZv9_ye1TU4qijQtF4JS3CQBW9lnWcsYHK7cmNFCfQl59CKdhenGYbP1flEGFZMcK_UKb6zUCsNUexH4ZDBrdU0D22gcTOjb5R-2vUAhvceKKygLVngJqxSroZdbL2ASdQeD_D8FhfwhHDNWiOlfkTuVBBxEf0wGgjQthSR2kY7aKBbdWWojr-mSUnqg0_YafetIcm8gEdC7Z_0z4DsQEb0NJ5nhtOSQKQmUK-kSZov2PAClqsWrL8Y7YRxWxuP1zv5-AzHPFAVQv7CxyAV-g7ZL3WQi1MEzWY0D3NGl_J0Q6AvFGcgAAAAH0a-aKAA")
 STRING2 = getenv("STRING_SESSION2", None)
 
 STRING3 = getenv("STRING_SESSION3", None)
